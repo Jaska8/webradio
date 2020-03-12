@@ -1,0 +1,45 @@
+<!-- This config file contains a minimal set of configurable parameters,
+     and mostly just contains the things you need to change or are
+     necessary to get Icecast working for most use cases.  We created
+     this for those who got scared away from the rather large and heavily
+     commented icecast.xml.dist file.
+-->
+<icecast>
+    <limits>
+        <sources>1</sources>
+    </limits>
+    <authentication>
+        <source-password>hackme</source-password>
+        <relay-password>hackme</relay-password>
+        <admin-user>admin</admin-user>
+        <admin-password>hackme</admin-password>
+    </authentication>
+<!-- Do not List server anywhere, uncomment section if you want your radio listed -->
+<!--
+    <directory>
+        <yp-url-timeout>15</yp-url-timeout>
+        <yp-url>http://dir.xiph.org/cgi-bin/yp-cgi</yp-url>
+    </directory>
+-->
+    <hostname>localhost</hostname>
+    <listen-socket>
+        <port>8000</port>
+    </listen-socket>
+    <security>
+        <chroot>false</chroot>
+    </security>
+        <paths>
+        <logdir>/usr/share/icecast/logs</logdir>
+        <webroot>/usr/share/icecast/web</webroot>
+        <adminroot>/usr/share/icecast/admin</adminroot>
+        <alias source="/" destination="/status.xsl"/>
+    </paths>
+    <logging>
+        <accesslog>access.log</accesslog>
+        <errorlog>error.log</errorlog>
+        <loglevel>error</loglevel>
+    </logging>
+    <http-headers>
+        <header type="cors" name="Access-Control-Allow-Origin" />
+    </http-headers>
+</icecast>

@@ -22,7 +22,7 @@ ADD icecast.run /etc/services.d/icecast/run
 ADD boot.sh /boot.sh
 ADD boot.run /etc/cont-init.d/01-boot
 ADD permissions /etc/fix-attrs.d/01-conf-files
-ADD playlist.sh /playlist.sh
+ADD playlist.sh /usr/local/bin/playlist.sh
 
 # Enter the S6, start services, fix permissions etc.
 ENTRYPOINT ["/init"]

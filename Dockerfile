@@ -12,15 +12,15 @@ RUN mkdir /config && \
 	mkdir /music && \
 	mkdir /etc/services.d/icecast && \
 	mkdir /etc/services.d/ices && \
-	mkdir /usr/share/icecast/logs
+	mkdir /var/log/icecast
 
 # Add scripts and config files
-ADD ices.xml /config
-ADD ices.run /etc/services.d/ices/run
-ADD icecast.xml /config
-ADD icecast.run /etc/services.d/icecast/run
 ADD boot.sh /boot.sh
 ADD boot.run /etc/cont-init.d/01-boot
+ADD icecast.xml /config
+ADD icecast.run /etc/services.d/icecast/run
+ADD ices.xml /config
+ADD ices.run /etc/services.d/ices/run
 ADD permissions /etc/fix-attrs.d/01-conf-files
 ADD playlist.sh /usr/local/bin/playlist.sh
 

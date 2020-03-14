@@ -29,7 +29,7 @@
         <chroot>false</chroot>
     </security>
         <paths>
-        <logdir>/usr/share/icecast/logs</logdir>
+        <logdir>/var/log/icecast</logdir>
         <webroot>/usr/share/icecast/web</webroot>
         <adminroot>/usr/share/icecast/admin</adminroot>
         <alias source="/" destination="/status.xsl"/>

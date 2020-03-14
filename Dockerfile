@@ -11,8 +11,8 @@ RUN apk add icecast ices mailcap
 RUN mkdir /config && \
 	mkdir /music && \
 	mkdir /etc/services.d/icecast && \
-	mkdir /etc/services.d/ices && \
-	mkdir /var/log/icecast
+	mkdir /etc/services.d/ices
+
 
 # Add scripts and config files
 ADD boot.sh /boot.sh

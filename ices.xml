@@ -3,7 +3,7 @@
     <!-- run in background -->
     <background>0</background>
     <!-- where logs, etc go. -->
-    <logpath>/usr/share/icecast/logs</logpath>
+    <logpath>/var/log/icecast</logpath>
     <logfile>ices.log</logfile>
     <!-- 1=error,2=warn,3=info,4=debug -->
     <loglevel>4</loglevel>

@@ -1,5 +1,5 @@
-/conf/ices.xml true nobody 0700 0700
-/conf/icecast.xml true nobody 0700 0700
-/conf/playlist.txt true nobody 0700 0700
+/configs/ices.xml true nobody 0700 0700
+/configs/icecast.xml true nobody 0700 0700
+/configs/playlist.txt true nobody 0700 0700
 /playlist.sh true nobody 0700 0700
 /var/log/icecast true icecast 0700 0700

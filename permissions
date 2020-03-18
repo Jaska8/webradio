@@ -1,5 +1,5 @@
-/config/ices.xml true root 0700 0700
+/config/ices.xml true icecast 0700 0700
 /config/icecast.xml true icecast 0700 0700
-/config/playlist.txt true root 0700 0700
-/playlist.sh true root 0700 0700
+/config/playlist.txt true icecast 0700 0700
+/playlist.sh true icecast 0700 0700
 /var/log/icecast true icecast 0700 0700
